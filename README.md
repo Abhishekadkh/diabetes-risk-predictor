@@ -103,7 +103,11 @@ Key Python libraries:
 
 All dependencies are listed in `requirements.txt`.
 
+
+⚠️ This application is for educational purposes only and does not provide medical advice.
+
 ---
+
 
 ## ⚡ Contribution
 
@@ -115,3 +119,4 @@ Feel free to **fork the repository**, **open issues**, or **submit pull requests
 ## 📄 License
 
 This repository is **open-source** and free to use for educational and personal projects.
+
