@@ -1,122 +1,162 @@
-# Diabetes Risk Predictor 💉
+# Diabetes Risk Predictor 🩺
 
-A **Streamlit web application** that predicts the **risk of diabetes** based on user health metrics using a pre-trained **machine learning pipeline**. This project demonstrates data preprocessing, model training, and a fully interactive web interface for easy predictions.
-
----
-
-## 🔗 Repository
-
-[GitHub Repository](https://github.com/Abhishekadkh/diabetes-risk-predictor.git)
+A machine learning–based web application that predicts the **risk of diabetes** using patient health indicators.
+The application is built with **Python, scikit-learn, and Streamlit**, and is intended for **educational and academic demonstration purposes**.
 
 ---
 
-## 🧰 Features
+## 📌 Project Overview
 
-* Interactive **Streamlit interface** for inputting health metrics.
-* Predicts **high or low diabetes risk** with **probability score**.
-* **Pre-trained Logistic Regression model** for reliable predictions.
-* **Neat two-column layout** and **progress bar** for probability visualization.
-* Fully self-contained, runs locally using `streamlit run app.py`.
+This project uses a trained machine learning pipeline to predict whether a person is at **high or low risk of diabetes** based on standard medical features such as glucose level, BMI, age, insulin level, and more.
+
+The application provides:
+
+* A clean Streamlit web interface
+* Risk prediction with probability score
+* Simple and reproducible setup
 
 ---
 
-## 📦 Project Structure
+## ⚠️ Disclaimer
+
+> **This application is for educational and learning purposes only.**
+> It is **not a medical diagnostic tool** and **must not** be used for real medical decision-making or treatment.
+> Always consult a qualified healthcare professional for medical advice.
+
+---
+
+## 🧠 Features
+
+* Interactive Streamlit UI
+* Machine Learning pipeline inference
+* Probability-based prediction output
+* Lightweight and easy to deploy
+* No external APIs or sensitive data usage
+
+---
+
+## 📂 Repository Structure
 
 ```
 diabetes-risk-predictor/
+│
 ├── app.py                     # Streamlit application
-├── artifacts/
-│   └── diabetes_pipeline.pkl  # Pre-trained ML pipeline
-├── assets/
-│   └── img.jpg                # Optional image/logo for app
 ├── requirements.txt           # Python dependencies
-└── README.md                  # Project description
+├── artifacts/
+│   └── diabetes_pipeline.pkl  # Trained ML pipeline
+└── README.md
 ```
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Getting Started
 
-Follow these steps to run the application locally:
-
-1. **Clone the repository**
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/Abhishekadkh/diabetes-risk-predictor.git
 cd diabetes-risk-predictor
 ```
 
-2. **Install dependencies**
+---
+
+### 2️⃣ Create a Virtual Environment (Recommended)
+
+#### ▶ Linux / macOS
+
+```bash
+python3 -m venv venv
+```
+
+#### ▶ Windows
+
+```powershell
+python -m venv venv
+```
+
+---
+
+### 3️⃣ Activate the Virtual Environment
+
+#### ▶ Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+#### ▶ Windows (PowerShell)
+
+```powershell
+venv\Scripts\Activate
+```
+
+> You should see `(venv)` in your terminal once activated.
+
+---
+
+### 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Run the Streamlit app**
+---
+
+### 5️⃣ Run the Streamlit App
 
 ```bash
 streamlit run app.py
 ```
 
-4. **Open in browser**
+The application will open automatically in your browser, typically at:
 
-Streamlit will open a local web server (usually at `http://localhost:8501`) where you can enter your health information and check your diabetes risk.
-
----
-
-## 🩺 Input Parameters
-
-The app requires the following metrics:
-
-* **Pregnancies** – Number of times pregnant
-* **Glucose** – Plasma glucose level
-* **Blood Pressure** – Diastolic blood pressure (mm Hg)
-* **Skin Thickness** – Triceps skinfold thickness (mm)
-* **Insulin** – 2-Hour serum insulin (mu U/ml)
-* **BMI** – Body Mass Index (weight in kg/(height in m)^2)
-* **Diabetes Pedigree Function (DPF)** – Genetic diabetes risk factor
-* **Age** – Age in years
+```
+http://localhost:8501
+```
 
 ---
 
-## 📊 How It Works
+## 📊 Model Details
 
-1. The app collects user input through **number input fields** in a **two-column layout**.
-2. Data is **passed to the pre-trained ML pipeline** (`diabetes_pipeline.pkl`) for prediction.
-3. Displays:
+* Dataset: Pima Indians Diabetes Dataset
 
-   * **Risk category**: High or Low
-   * **Probability**: Numeric percentage
-   * **Visual feedback**: Progress bar for intuitive understanding
+* Algorithm: scikit-learn pipeline
 
----
+* Input Features:
 
-## 🛠️ Dependencies
+  * Pregnancies
+  * Glucose
+  * Blood Pressure
+  * Skin Thickness
+  * Insulin
+  * BMI
+  * Diabetes Pedigree Function
+  * Age
 
-Key Python libraries:
+* Output:
 
-* `streamlit`
-* `numpy`
-* `pandas`
-* `scikit-learn`
-* `joblib`
-
-All dependencies are listed in `requirements.txt`.
-
-
-⚠️ This application is for educational purposes only and does not provide medical advice.
+  * Risk classification (High / Low)
+  * Prediction probability
 
 ---
 
+## 🔐 Security & Privacy
 
-## ⚡ Contribution
-
-This project is maintained by **Abhishek Adhikari**.
-Feel free to **fork the repository**, **open issues**, or **submit pull requests** for improvements.
+* No user data is stored
+* No authentication or API keys
+* No external network calls
+* Safe to run locally and safe to make public
 
 ---
 
-## 📄 License
+## 📜 License
 
-This repository is **open-source** and free to use for educational and personal projects.
+This project is released for **educational and academic use**.
+Feel free to fork, learn, and improve upon it.
 
+---
+
+## 👤 Author
+
+**Abhishek Adhikari**
+---
