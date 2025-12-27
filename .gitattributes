@@ -1,0 +1,12 @@
+# Handle line endings automatically
+* text=auto
+
+# Force LF endings for Python files
+*.py text eol=lf
+
+# Treat Jupyter notebooks as text for diffs
+*.ipynb diff=jupyter
+
+# Binary files (do not attempt to diff)
+*.pkl binary
+*.csv binary
