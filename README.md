@@ -40,11 +40,20 @@ The application provides:
 ```
 diabetes-risk-predictor/
 │
-├── app.py                     # Streamlit application
-├── requirements.txt           # Python dependencies
 ├── artifacts/
-│   └── diabetes_pipeline.pkl  # Trained ML pipeline
-└── README.md
+│ └── diabetes_pipeline.pkl # Trained ML pipeline
+│
+├── data/ # Raw and processed data
+│
+├── frontend/
+│ └── app.py # Streamlit application UI
+│
+├── notebook/ # Jupyter notebook for EDA/modeling
+│  └── 01_EDA.ipynb , 02_feature_preprocessing.ipynb , 03_model.ipynb
+├── .gitattributes # Git attributes config
+├── .gitignore # Git ignore rules
+├── README.md # Project documentation
+└── requirements.txt # Python dependencies
 ```
 
 ---
